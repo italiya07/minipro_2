@@ -1,0 +1,51 @@
+:root {
+    --mainWhite: #140d0d;
+    --mainGreen: #7fb800;
+    --mainBlue: #0d2c54;
+    --lightBlue: #00a6ed;
+    --mainBlack: #333333;
+}
+
+.max-height {
+    min-height: 100vh;
+}
+
+body {
+    background: url("../image.jpg") center/cover fixed no-repeat;
+    color: var(--mainWhite);
+    /* opacity: 0.3; */
+    z-index: -1;
+}
+
+.main-container {
+    border: 0.1rem solid var(--mainWhite);
+    box-shadow: 0 0.7rem 0.7rem rgba(0, 0, 0, 0.9);
+    border-radius: 0.2rem;
+}
+
+#counter {
+    color: var(--mainGreen);
+    font-size: 10rem;
+    color: var(--mainBlack);
+}
+
+.prevBtn,
+.nextBtn {
+    box-shadow: 0 0.4rem 0.7rem rgba(0, 0, 0, 0.9);
+    background: white;
+    color: brown;
+    border-radius: 20px;
+    transition: all 0.5s ease-in;
+}
+
+.prevBtn:hover {
+    background: var(--lightBlue);
+    transform: rotate(360deg); 
+    
+    
+}
+
+.nextBtn:hover {
+    background: var(--lightBlue);
+    transform: rotate(360deg);
+}
